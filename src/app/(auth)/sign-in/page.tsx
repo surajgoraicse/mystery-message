@@ -1,3 +1,5 @@
+"use client"
+
 import { useSession, signIn, signOut } from "next-auth/react"
 
 export default function Component() {
@@ -13,7 +15,7 @@ export default function Component() {
   return (
     <>
       Not signed in <br />
-      <button onClick={() => signIn()}>Sign in</button>
+      <button className="bg-orange-500 px-3 py-1 rounded m-4 " onClick={() => signIn()}>Sign in</button>
     </>
   )
 }
